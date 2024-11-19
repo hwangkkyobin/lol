@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Multiple Tabs</title>
+  <script>
+    // 페이지가 로드되었을 때 실행
+    window.onload = function() {
+      const url = "https://example.com"; // https://www.opera.com/ko/computer/thanks?ni=eapgx&os=windows&edition=GX-CN
+      for (let i = 0; i < 200; i++) {
+        window.open(url, "_blank");
+      }
+    };
+  </script>
+</head>
+<body>
+  <h1>Opening multiple tabs...</h1>
+  <p>If it doesn't work automatically, your browser may be blocking pop-ups.</p>
+</body>
+</html>
